@@ -8,7 +8,7 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 
 const Home = ({ id }) => (
 	<Panel id={id}>
-        <Cell>
+        <Cell style={ profileHeaderStyle }>
             Hello world
         </Cell>
 	</Panel>
