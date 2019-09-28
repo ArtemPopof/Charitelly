@@ -15,12 +15,13 @@ export class FeedCard extends Component {
             </div>
         )
     }
-    
 }
 
 const image = {
     height: '158px',
     borderRadius: '8px',
+    width: '100%',
+    objectFit: 'cover'
 }
 
 const header = {
