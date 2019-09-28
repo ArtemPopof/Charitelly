@@ -6,16 +6,17 @@ export default class HomeHeader extends Component {
     render() {
         return (
             <div id="header" style={ profileHeaderStyle }>
-            <img src={avatar} style={avatarStyle}></img>
             <div style={pointsAndDonationStyle}>
+                <img src={avatar} style={avatarStyle}></img>
                 <div style={donationTotalStyle}>
-                    <div>0 ₽</div>
+                    <div>600 ₽</div>
                     <div style={pointsLabelStyle}>Пожертвовано</div>
                 </div>
                 <div style={pointsTotalStyle}>
-                    <div>0 $</div>
+                    <div>500 $</div>
                     <div style={pointsLabelStyle}>у Вас на счету</div>
                 </div>
+                <div style={tutorial}>Получай баллы за пожертвования и участвуй в розыгрыше призов</div>
                 <div style={promosScrollStyle}>
                     <PromoScroll></PromoScroll>
                 </div>
@@ -31,10 +32,11 @@ const profileHeaderStyle = {
 }
 
 const avatarStyle = {
+    display: 'inline-block',
     width: '56px',
     height: '56px',
     borderRadius: '50%',
-    margin: '16px'
+    margin: '0px 32px 0px 0px'
 }
 
 const donationTotalStyle = {
@@ -56,9 +58,8 @@ const pointsTotalStyle = {
     display: 'inline-block',
     height: '28px',
 
-    margin: '0px 0px 0px 68px',
+    margin: '0px 0px 0px 26px',
 
-    fontFamily: 'SF UI Display',
     fontSize: '36px',
     lineHeight: '28px',
     /* identical to box height, or 78% */
@@ -69,13 +70,14 @@ const pointsTotalStyle = {
 }
 
 const pointsAndDonationStyle = {
-    margin: '7px 0px 0px 16px'
+    margin: '0px 0px 0px 16px',
+    padding: '30px 0px 0px 0px',
+    fontWeight: 'bold'
 }
 
 const pointsLabelStyle = {
     margin: '8px 0px 0px 0px',
 
-    fontFamily: 'SF UI Text',
     fontSize: '14px',
     lineHeight: '18px',
     /* identical to box height, or 129% */
@@ -85,4 +87,12 @@ const pointsLabelStyle = {
 
 const promosScrollStyle = {
     margin: '23px 0px 0px 0px'
+}
+
+const tutorial = {
+    margin: '23px 0px 0px 0px',
+    fontWeight: 'bold',
+    fontSize: '15px',
+    lineHeight: '20px',
+    color: 'white'
 }

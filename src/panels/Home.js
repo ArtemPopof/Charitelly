@@ -9,7 +9,6 @@ import Feed from "../components/Feed";
 
 const Home = ({ id }) => (
 	<Panel id={id} style={componentStyle}>
-        <HomeHeader></HomeHeader>
         <div>
         <TopDonatersScroll></TopDonatersScroll>
         </div>

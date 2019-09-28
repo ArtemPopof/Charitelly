@@ -1,9 +1,10 @@
 import React from "react"
 import { Panel } from "@vkontakte/vkui";
+import HomeHeader from "../components/HomeHeader"
 
 const Profile = ({ id }) => (
     <Panel id={id}>
-        Hello profile!!!       
+        <HomeHeader></HomeHeader>
     </Panel>
 );
 
