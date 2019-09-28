@@ -4,8 +4,8 @@ export class PromoScrollCard extends Component {
     render() {
         return (
             <div style={cardStyle}>
-                <div style={headerLabel}>Header</div>
-                <div style={text}>this is important promo, consider participate in it</div>
+                <div style={headerLabel}>Приведи друга</div>
+                <div style={text}>10 баллов за каждого приглашенного друга</div>
             </div>
         )
     }
@@ -17,7 +17,9 @@ const cardStyle = {
     margin: '0px 12px 0px 0px',
     padding: '12px 8px 0px 16px',
     backgroundColor: 'white',
-    borderRadius: '8px'
+    borderRadius: '8px',
+    fontWeight: 'normal',
+
 }
 
 const headerLabel = {
@@ -30,7 +32,6 @@ const headerLabel = {
 
 const text = {
     margin: '4px 0px 0px 0px',
-    fontFamily: 'SF UI Text',
     fontSize: '13px',
     lineHeight: '16px',
 

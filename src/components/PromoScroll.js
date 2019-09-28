@@ -10,9 +10,6 @@ export class PromoScroll extends Component {
                 <div style={{display: 'flex'}}>
                     <PromoScrollCard/>
                     <PromoScrollCard/>
-                    <PromoScrollCard/>
-                    <PromoScrollCard/>
-                    <PromoScrollCard/>
                 </div>
             </HorizontalScroll>
         )

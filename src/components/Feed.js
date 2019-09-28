@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FeedMenu from './FeedMenu'
+import FeedMenu from './Menu'
 import FeedCard from './FeedCard'
 
 export class Feed extends Component {

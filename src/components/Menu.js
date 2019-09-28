@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Group, Tabs, HorizontalScroll, TabsItem} from '@vkontakte/vkui'
 
-export class FeedMenu extends Component {
+export class Menu extends Component {
     render() {
         return (
             <div>
@@ -40,4 +40,4 @@ export class FeedMenu extends Component {
     }
 }
 
-export default FeedMenu
+export default Menu
