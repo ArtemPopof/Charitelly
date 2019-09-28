@@ -3,36 +3,48 @@ import {Epic, Tabbar, TabbarItem, Panel,
       PanelHeader, View} from '@vkontakte/vkui'
 import Icon from '../components/Icon'
 import Home from '../panels/Home'
-import Achievements from '../panels/Achievements'
+import PrizePanel from '../panels/PrizePanel'
 
 export class NavigationBar extends Component {
+    state = {
+        activeStory: 'home'
+    }
+
+
+   onStoryChange = (e, panel) => {
+       this.setState ({
+           activeStory: panel
+       })
+   }
+
     render() {
         return (
             <Epic activeStory="home" tabbar={
                 <Tabbar>
                   <TabbarItem
-                    onClick={this.onStoryChange}
+                    onClick={this.onStoryChange(this, "home")}
                     data-story="home"
-                    text="Новости"
+                    text="Проекты"
+                    selected={this.state.activeStory === 'home'}
                   ><Icon/></TabbarItem>
                   <TabbarItem
-                    onClick={this.onStoryChange}
-                    data-story="achievments"
-                    text="Поиск"
+                    onClick={this.onStoryChange("prizes")}
+                    data-story="prizes"
+                    text="Призы"
+                    selected={this.state.activeStory === 'prizes'}
                   ><Icon/></TabbarItem>
                   <TabbarItem
-                    onClick={this.onStoryChange}
                     data-story="messages"
                     label="12"
-                    text="Сообщения"
+                    text="Что-то еще"
                   ><Icon/></TabbarItem>
                 </Tabbar>
               }>
                 <View id="home" activePanel="home">
                     <Home id="home"/>
                 </View>
-                <View id="achievments" activePanel="achievments">
-                    <Achievements id="achievements"/>
+                <View id="prizes" activePanel="prizes">
+                    <PrizePanel id="prizes"/>
                 </View>
                 <View id="messages" activePanel="messages">
                 </View>
