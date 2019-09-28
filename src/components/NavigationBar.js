@@ -6,6 +6,7 @@ import {
 import Icon from '../components/Icon'
 import Home from '../panels/Home'
 import PrizePanel from '../panels/PrizePanel'
+import Profile from '../panels/Profile'
 
 export class NavigationBar extends Component {
   constructor(props) {
@@ -52,9 +53,7 @@ export class NavigationBar extends Component {
           <PrizePanel id="prize"/>
         </View>
         <View id="profile" activePanel="profile">
-          <Panel id="profile">
-            <PanelHeader>Messages</PanelHeader>
-          </Panel>
+          <Profile id="profile"/>
         </View>
       </Epic>
     )
