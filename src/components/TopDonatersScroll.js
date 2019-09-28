@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { HorizontalScroll } from "@vkontakte/vkui"
-import Icon24User from '../img/cat.jpg'
 import TopDonatersCard from './TopDonatersCard'
 
 

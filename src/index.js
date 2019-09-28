@@ -3,8 +3,9 @@ import 'core-js/features/set';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import connect from '@vkontakte/vk-connect';
-import OldApp from './OldApp';
+import App from './App';
 import registerServiceWorker from './sw';
+import OldApp from './OldApp';
 
 // Init VK  Mini App
 connect.send('VKWebAppInit');
