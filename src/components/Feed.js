@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import FeedMenu from './Menu'
+import Menu from './FeedCard'
 import FeedCard from './FeedCard'
 
 export class Feed extends Component {
     render() {
         return (
             <div style={container}>
-                    <FeedMenu/>
+                    <Menu menuItems={["Все", "Избранное", "Акции"]}/>
                 <div style={{padding: '0px 16px'}}>
                     <FeedCard/>
                     <FeedCard/>

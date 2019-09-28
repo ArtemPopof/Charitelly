@@ -1,43 +1,45 @@
 import React, { Component } from 'react'
 import {Group, Tabs, HorizontalScroll, TabsItem} from '@vkontakte/vkui'
+import PropType from 'prop-types'
 
 export class Menu extends Component {
-    render() {
-        return (
-            <div>
-            <Group>
-              <Tabs type="buttons">
-                <HorizontalScroll>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab3: 'all' })}
-                    selected={true}
-                  >
-                    Все
-                  </TabsItem>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab3: 'user' })}
-                    selected={false}
-                  >
-                    Выбор редакции
-                  </TabsItem>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab3: 'inter' })}
-                    selected={false}
-                  >
-                    Сначала интересные
-                  </TabsItem>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab3: 'top' })}
-                    selected={false}
-                  >
-                    Топ 10 интересных
-                  </TabsItem>
+
+  state = {
+    currentTab: this.props.menuItems[0]
+  }
+
+  createTabs = () => {
+    return this.props.menuItems.map((item) => (
+      (item == this.state.currentTab) ?
+      <TabsItem selected={true}>
+        {item}
+      </TabsItem> 
+      :
+      <TabsItem>
+      {item}
+      </TabsItem> 
+    ))
+
+  }
+
+  render() {
+      return (
+          <div>
+          <Group>
+            <Tabs type="buttons">
+               <HorizontalScroll>
+                  {this.createTabs()}
                 </HorizontalScroll>
               </Tabs>
             </Group>
             </div>
         )
     }
+}
+
+Menu.propTypes = {
+  menuItems: PropType.array.isRequired,
+  itemSelected: PropType.func.isRequired
 }
 
 export default Menu
