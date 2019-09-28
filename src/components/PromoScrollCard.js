@@ -5,7 +5,7 @@ export class PromoScrollCard extends Component {
         return (
             <div style={cardStyle}>
                 <div style={headerLabel}>Header</div>
-                <div style={text}>this is very important promo use should consider participate in it</div>
+                <div style={text}>this is important promo, consider participate in it</div>
             </div>
         )
     }
@@ -15,7 +15,7 @@ const cardStyle = {
     width: '226px',
     height: '80px',
     margin: '0px 12px 0px 0px',
-    padding: '12px 12px 0px 16px',
+    padding: '12px 8px 0px 16px',
     backgroundColor: 'white',
     borderRadius: '8px'
 }
