@@ -53,7 +53,7 @@ export class NavigationBar extends Component {
           <PrizePanel id="prize"/>
         </View>
         <View id="profile" activePanel="profile">
-          <Profile id="profile"/>
+          <Profile id="profile"></Profile>
         </View>
       </Epic>
     )
