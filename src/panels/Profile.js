@@ -8,8 +8,16 @@ const Profile = ({ id }) => (
     <Panel id={id}>
         <HomeHeader></HomeHeader>
         <Menu></Menu>
-        <FeedCard></FeedCard>
+        <div style={container}>
+            <FeedCard></FeedCard>
+            <FeedCard></FeedCard>
+        </div>
     </Panel>
 );
+
+const container = {
+    padding: '0px 16px',
+    backgroundColor: 'white'
+}
 
 export default Profile

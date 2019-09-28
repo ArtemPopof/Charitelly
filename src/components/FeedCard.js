@@ -60,8 +60,8 @@ const description = {
 
 const container = {
     backgroundColor: 'white',
-    margin: '26px 0px 0px 0px',
-    padding: '0px 0px 6px 0px'
+    margin: '0px 0px 0px 0px',
+    padding: '26px 0px 6px 0px'
 }
 
 const progress = {
