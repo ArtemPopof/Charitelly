@@ -5,6 +5,7 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import avatar from '../img/cat.jpg'
 import TopDonatersScroll from '../components/TopDonatersScroll'
+import PromoScroll from '../components/PromoScroll'
 // Home screen (list of all projects, profile info)
 
 const Home = ({ id }) => (
@@ -21,6 +22,7 @@ const Home = ({ id }) => (
                     <div style={pointsLabelStyle}>у Вас на счету</div>
                 </div>
                 <div style={promosScrollStyle}>
+                    <PromoScroll></PromoScroll>
                 </div>
             </div>
         </div>

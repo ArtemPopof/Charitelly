@@ -3,7 +3,7 @@ import { HorizontalScroll, Avatar } from "@vkontakte/vkui"
 import Icon24User from '../img/cat.jpg'
 
 
-export class PromoScroll extends Component {
+export class TopDonatersScroll extends Component {
     render() {
         return (
             <HorizontalScroll>
@@ -50,4 +50,4 @@ const itemStyle = {
     margin: '0px 12px 0px 0px'
 }
 
-export default PromoScroll
+export default TopDonatersScroll
