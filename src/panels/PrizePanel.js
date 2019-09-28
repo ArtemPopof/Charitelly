@@ -3,7 +3,7 @@ import React from 'react'
 
 const PrizePanel = ({ id }) => (
     <Panel id={id}>
-        <Tabs>
+        <Tabs type="buttons">
             <HorizontalScroll>
                 <TabsItem>Розыгрыши призов</TabsItem>
                 <TabsItem>Награды</TabsItem>
