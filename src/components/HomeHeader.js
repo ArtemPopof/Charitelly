@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import avatar from '../img/cat.jpg'
 import PromoScroll from '../components/PromoScroll'
 
-export class HomeHeader extends Component {
+export default class HomeHeader extends Component {
     render() {
         return (
             <div id="header" style={ profileHeaderStyle }>
@@ -86,5 +86,3 @@ const pointsLabelStyle = {
 const promosScrollStyle = {
     margin: '23px 0px 0px 0px'
 }
-
-export default HomeHeader

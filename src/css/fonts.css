@@ -20,3 +20,10 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/SFUIDisplay-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}

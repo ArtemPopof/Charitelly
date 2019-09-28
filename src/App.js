@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import '@vkontakte/vkui/dist/vkui.css';
-import './css/fonts.css'
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
