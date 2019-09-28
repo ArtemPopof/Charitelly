@@ -9,16 +9,19 @@ export class Menu extends Component {
   }
 
   createTabs = () => {
-    return this.props.menuItems.map((item) => (
-      (item == this.state.currentTab) ?
-      <TabsItem selected={true}
-      onClick={this.selected}
-      data-story={item}>
+    return this.props.menuItems.map((item, _a, _b) => (
+      (item === this.state.currentTab) ?
+      <TabsItem 
+        selected={true}
+        key={item}
+        data-story={item}>
         {item}
       </TabsItem> 
       :
-      <TabsItem onClick={this.selected}
-      data-story={item}>
+      <TabsItem 
+        onClick={this.selected}
+        key={item}
+        data-story={item}>
       {item}
       </TabsItem> 
     ))
