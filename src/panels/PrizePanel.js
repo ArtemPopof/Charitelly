@@ -1,14 +1,10 @@
-import { Panel, Tabs, HorizontalScroll, TabsItem } from "@vkontakte/vkui";
-import React from 'react'
+import React from "react"
+import PrizeMenu from "../components/PrizeMenu";
+import { Panel } from "@vkontakte/vkui";
 
 const PrizePanel = ({ id }) => (
     <Panel id={id}>
-        <Tabs type="buttons">
-            <HorizontalScroll>
-                <TabsItem>Розыгрыши призов</TabsItem>
-                <TabsItem>Награды</TabsItem>
-            </HorizontalScroll>
-        </Tabs>
+        <PrizeMenu />
     </Panel>
 );
 

@@ -16,7 +16,7 @@ const OldApp = () => {
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
 
 	return (
-		<View activePanel={activePanel} popout={popout}>
+		<View activePanel={activePanel}>
 			<NavigationBar id='navigation'/>
 		</View>
 	);
