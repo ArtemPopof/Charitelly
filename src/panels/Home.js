@@ -18,7 +18,6 @@ const Home = ({ id }) => (
 );
 
 const componentStyle = {
-    
 }
 
 

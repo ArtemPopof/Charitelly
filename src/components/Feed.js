@@ -5,7 +5,7 @@ import FeedCard from './FeedCard'
 export class Feed extends Component {
     render() {
         return (
-            <div>
+            <div style={container}>
                 <FeedMenu/>
                 <FeedCard/>
                 <FeedCard/>
@@ -16,6 +16,10 @@ export class Feed extends Component {
             </div>
         )
     }
+}
+
+const container = {
+    backgroundColor: 'white'
 }
 
 export default Feed
