@@ -3,8 +3,8 @@ import { Panel } from "@vkontakte/vkui";
 import Menu from "../components/Menu";
 
 class PrizePanel extends React.Component {
-    PrizePanel(id) {
-        this.id = id;
+    constructor(props) {
+        super(props)
     }
 
     itemSelected(item) {
@@ -13,7 +13,7 @@ class PrizePanel extends React.Component {
 
     render() {
         return (
-            <Panel id={this.id}>
+            <Panel id={this.props.id}>
                 <Menu
                     menuItems={["Розыгрыши призов", "Подарки"]} 
                     itemSelected={this.itemSelected} />
