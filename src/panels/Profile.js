@@ -4,6 +4,7 @@ import Menu from "../components/Menu";
 import HomeHeader from "../components/HomeHeader"
 import FeedCard from "../components/FeedCard"
 import PrizeScroll from "../components/PrizesScroll";
+import Feed from "../components/Feed";
 
 class Profile extends React.Component {
     Profile(id) {
@@ -23,8 +24,8 @@ class Profile extends React.Component {
                 <Menu menuItems={["Донаты", "Розыгрыши", "Призы"]} 
                 itemSelected={(item) => this.itemSelectedCallback(item)}></Menu>
                 {/* {this.getContent(this.state.currentTab)} */}
-                <PrizeScroll/>
-
+                {/* <PrizeScroll/> */}
+                <Feed menuEnabled="false"/>
             </Panel>
         )
     }
