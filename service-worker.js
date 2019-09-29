@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Charitelly/precache-manifest.fe8ac94316fae5abe8b3a27aa11066e9.js"
+  "/Charitelly/precache-manifest.2a767dbf4166a1d9358f3299311cfbc6.js"
 );
 
 self.addEventListener('message', (event) => {
