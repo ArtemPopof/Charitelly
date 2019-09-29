@@ -10,9 +10,8 @@ export default class PrizeCard extends Component {
     render() {
         return (
             <div style={card}>
-                <div style={prizeCardImageStyle}></div>
-                <div style={prizeCardContentStyle}>
-                    <Button style={prizeCardButtonStyle}>Участвовать</Button>
+                <div style={leftPart}>1</div>
+                <div style={rightPart}>2
                 </div>
             </div>
         )
@@ -23,21 +22,22 @@ const card = {
     display: "flex",
     margin: "16px",
     background: "gray",
-    borderRadius: "8px"
+    borderRadius: "8px",
+    height: "115px",
 }
 
-const prizeCardImageStyle = {
-    height: "115px",
-    width: "128px",
+const leftPart = {
+    height: "100%",
     background: "green",
     borderRadius: "8px 0px 0px 8px",
-    float: "left",
+    flex: "0 0 128px"
 }
 
-const prizeCardContentStyle = {
-    position: "relative",
+const rightPart = {
     height: "100%",
-    margin: "8px"
+    background: "red",
+    flex: "1",
+    borderRadius: "0px 8px 8px 0px"
 }
 
 const prizeCardButtonStyle = {
