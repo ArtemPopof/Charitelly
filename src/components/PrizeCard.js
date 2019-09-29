@@ -11,7 +11,8 @@ export default class PrizeCard extends Component {
         return (
             <div style={card}>
                 <div style={leftPart}>1</div>
-                <div style={rightPart}>2
+                <div style={rightPart}>
+                    <Button style={btn}>Участвовать</Button>
                 </div>
             </div>
         )
@@ -37,12 +38,15 @@ const rightPart = {
     height: "100%",
     background: "red",
     flex: "1",
-    borderRadius: "0px 8px 8px 0px"
+    borderRadius: "0px 8px 8px 0px",
+    position: "relative",
+    textAlign: "center"
 }
 
-const prizeCardButtonStyle = {
-    float: "left",
-    bottom: "6.09%",
-    left: "144px",
-    background: "orange"
+const btn = {
+    position: "absolute",
+    background: "orange",
+    margin: "0 -50px",
+    width: "100px",
+    bottom: "6%"
 }
