@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "homepage": "https://ArtemPopof.github.io/Fundme/",
   "devDependencies": {
     "cross-env": "^5.2.1",
     "react-hot-loader": "^4.12.14",
