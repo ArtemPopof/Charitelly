@@ -50,7 +50,7 @@ export class NavigationBar extends Component {
           <Home id="home"/>
         </View>
         <View  header={false} id="prize" activePanel="prize">
-          <PrizePanel id="prize"/>
+          <PrizePanel id="prize" cards={[1, 2, 3,4,5]}/>
         </View>
         <View  header={false} id="profile" activePanel="profile">
           <Profile id="profile"></Profile>

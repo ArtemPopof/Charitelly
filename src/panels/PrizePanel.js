@@ -5,11 +5,17 @@ import PrizeCard from "../components/PrizeCard";
 
 class PrizePanel extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     itemSelected(item) {
         console.log(item);
+    }
+
+    addCards() {
+        return this.props.cards.map(element => 
+            <PrizeCard key={element}>element</PrizeCard>
+        );
     }
 
     render() {
@@ -18,11 +24,7 @@ class PrizePanel extends React.Component {
                 <Menu
                     menuItems={["Розыгрыши призов", "Подарки"]}
                     itemSelected={this.itemSelected} />
-                <List>
-                    <PrizeCard>s</PrizeCard>
-                    <PrizeCard>s</PrizeCard>
-                    <PrizeCard>s</PrizeCard>
-                </List>
+                {this.addCards()}
             </Panel>
         );
     }

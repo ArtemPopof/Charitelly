@@ -9,7 +9,7 @@ export default class PrizeCard extends Component {
 
     render() {
         return (
-            <div style={prizeCardStyle}>
+            <div style={card}>
                 <div style={prizeCardImageStyle}></div>
                 <div style={prizeCardContentStyle}>
                     <Button style={prizeCardButtonStyle}>Участвовать</Button>
@@ -19,13 +19,11 @@ export default class PrizeCard extends Component {
     }
 }
 
-const prizeCardStyle = {
-    position: "relative",
-    height: "115px",
-    background: "black",
-    borderRadius: "8px",
+const card = {
+    display: "flex",
     margin: "16px",
-    transition: "0.4s all",
+    background: "gray",
+    borderRadius: "8px"
 }
 
 const prizeCardImageStyle = {

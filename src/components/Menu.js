@@ -9,7 +9,7 @@ export class Menu extends Component {
   }
 
   createTabs = () => {
-    return this.props.menuItems.map((item, _a, _b) => (
+    return this.props.menuItems.map((item) => (
       (item === this.state.currentTab) ?
       <TabsItem 
         selected={true}
