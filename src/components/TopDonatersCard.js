@@ -7,7 +7,7 @@ export class TopDonatersCard extends Component {
     render() {
         return (
           <div style={{ ...itemStyle, paddingLeft: 4 }}>
-            <Avatar src={this.props.imageUrl} size={64} style={{ marginBottom: 8 }}></Avatar>
+            <Avatar src={this.props.imageUrl} size={54} style={{ marginBottom: 8 }}></Avatar>
             <div style={donation}>{this.props.donationCount}</div>
           </div>
         )
