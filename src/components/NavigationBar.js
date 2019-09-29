@@ -7,6 +7,10 @@ import Icon from '../components/Icon'
 import Home from '../panels/Home'
 import PrizePanel from '../panels/PrizePanel'
 import Profile from '../panels/Profile'
+import Cat from '../img/cat.jpg'
+import User from '../img/user.png'
+import HomeIcon from '../img/home.png'
+import Prize from '../img/gift.png'
 
 export class NavigationBar extends Component {
   constructor(props) {
@@ -32,18 +36,17 @@ export class NavigationBar extends Component {
             onClick={this.onStoryChange}
             selected={this.state.activeStory === 'home'}
             data-story="home"
-            text="Home"
-          ><Icon/></TabbarItem>
+          ><Icon url={HomeIcon}/></TabbarItem>
           <TabbarItem
             onClick={this.onStoryChange}
             selected={this.state.activeStory === 'prize'}
             data-story="prize"
-          ><Icon/></TabbarItem>
+          ><Icon url={Prize}/></TabbarItem>
           <TabbarItem
             onClick={this.onStoryChange}
             selected={this.state.activeStory === 'profile'}
             data-story="profile"
-          ><Icon/></TabbarItem>
+          ><Icon url={User}/></TabbarItem>
         </Tabbar>
       }>
         <View header={false} id="home" activePanel="home">

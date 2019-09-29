@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { HorizontalScroll } from "@vkontakte/vkui"
 import TopDonatersCard from './TopDonatersCard'
+import Cat from '../img/cat.jpg'
+import Persik from '../img/persik.png'
+import Man from '../img/man.png'
 
 
 export class TopDonatersScroll extends Component {
@@ -10,17 +13,15 @@ export class TopDonatersScroll extends Component {
             <div style={header}>Стабильность месяца</div>
             <HorizontalScroll>
             <div style={scroll}>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>
-              <TopDonatersCard/>              
-              <TopDonatersCard/>
+              <TopDonatersCard imageUrl={Persik} donationCount='55k'/>
+              <TopDonatersCard imageUrl={Cat} donationCount='42k'/>
+              <TopDonatersCard imageUrl={Man} donationCount='12.5k'/>
+              <TopDonatersCard imageUrl={Persik} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Cat} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Man} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Persik} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Cat} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Man} donationCount='10.5k'/>
             </div>
             </HorizontalScroll>
           </div>
