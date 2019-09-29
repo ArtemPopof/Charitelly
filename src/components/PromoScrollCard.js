@@ -19,11 +19,10 @@ const cardStyle = {
     backgroundColor: 'white',
     borderRadius: '8px',
     fontWeight: 'normal',
-
 }
 
 const headerLabel = {
-    fontFamily: 'SF UI Text',
+    fontWeight: 'bold',
     fontSize: '15px',
     lineHeight: '20px',
     letterSpacing: '-0.32px',
