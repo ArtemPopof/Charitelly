@@ -17,7 +17,7 @@ export class NavigationBar extends Component {
     super(props)
 
     this.state = {
-      activeStory: 'prize',
+      activeStory: 'home',
     };
     this.onStoryChange = this.onStoryChange.bind(this);
   }
