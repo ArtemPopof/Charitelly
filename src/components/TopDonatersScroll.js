@@ -9,7 +9,9 @@ export class TopDonatersScroll extends Component {
           <div style={container}>
             <div style={header}>Стабильность месяца</div>
             <HorizontalScroll>
-            <div style={{display: 'flex'}}>
+            <div style={scroll}>
+              <TopDonatersCard/>
+              <TopDonatersCard/>
               <TopDonatersCard/>
               <TopDonatersCard/>
               <TopDonatersCard/>
@@ -27,8 +29,8 @@ export class TopDonatersScroll extends Component {
 }
 
 const container = {
+    padding: '15px 16px',
     background: 'white',
-    padding: '15px 16px'
 }
 
 const header = {
@@ -38,6 +40,11 @@ const header = {
   lineHeight: '16px',
   letterSpacing: '-0.078px',
   color: '#909499'
+}
+
+const scroll = {
+  padding: '0px',
+  display: 'flex'
 }
 
 export default TopDonatersScroll
