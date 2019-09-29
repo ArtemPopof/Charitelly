@@ -12,9 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "homepage": "https://ArtemPopof.github.io/Fundme/",
+  "homepage": "https://ArtemPopof.github.io/Charitelly/",
   "devDependencies": {
     "cross-env": "^5.2.1",
+    "gh-pages": "^2.1.1",
     "react-hot-loader": "^4.12.14",
     "react-scripts": "^3.1.2"
   },
