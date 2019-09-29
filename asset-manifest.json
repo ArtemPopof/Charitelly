@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Fundme/static/css/main.b4c54270.chunk.css",
+    "main.js": "/Fundme/static/js/main.de4f50b1.chunk.js",
+    "main.js.map": "/Fundme/static/js/main.de4f50b1.chunk.js.map",
+    "runtime-main.js": "/Fundme/static/js/runtime-main.2662797c.js",
+    "runtime-main.js.map": "/Fundme/static/js/runtime-main.2662797c.js.map",
+    "static/css/2.4e89ce74.chunk.css": "/Fundme/static/css/2.4e89ce74.chunk.css",
+    "static/js/2.61433d60.chunk.js": "/Fundme/static/js/2.61433d60.chunk.js",
+    "static/js/2.61433d60.chunk.js.map": "/Fundme/static/js/2.61433d60.chunk.js.map",
+    "index.html": "/Fundme/index.html",
+    "precache-manifest.460e7271ef68b9f9f333b69f45f46026.js": "/Fundme/precache-manifest.460e7271ef68b9f9f333b69f45f46026.js",
+    "service-worker.js": "/Fundme/service-worker.js",
+    "static/css/2.4e89ce74.chunk.css.map": "/Fundme/static/css/2.4e89ce74.chunk.css.map",
+    "static/css/main.b4c54270.chunk.css.map": "/Fundme/static/css/main.b4c54270.chunk.css.map",
+    "static/media/fonts.css": "/Fundme/static/media/SFUIText-Regular.0cfc29e3.ttf",
+    "static/media/cat.jpg": "/Fundme/static/media/cat.d051ab50.jpg",
+    "static/media/golub.jpg": "/Fundme/static/media/golub.5d3ce8f7.jpg",
+    "static/media/man.png": "/Fundme/static/media/man.cc8a5692.png",
+    "static/media/neva.jpg": "/Fundme/static/media/neva.02806f9f.jpg",
+    "static/media/persik.png": "/Fundme/static/media/persik.4e1ec840.png",
+    "static/media/prize1.png": "/Fundme/static/media/prize1.2493a3f5.png",
+    "static/media/prize2.png": "/Fundme/static/media/prize2.3deaca6d.png",
+    "static/media/prize3.png": "/Fundme/static/media/prize3.939203a5.png",
+    "static/media/tigre.jpg": "/Fundme/static/media/tigre.b72283a9.jpg"
+  }
+}
