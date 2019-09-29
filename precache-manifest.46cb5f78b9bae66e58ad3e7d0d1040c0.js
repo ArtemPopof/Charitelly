@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a54cfe8d81554fd83c242b9c13199a04",
+    "revision": "779c346077710c8011d7531dbd7488e5",
     "url": "/Charitelly/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Charitelly/static/css/2.4e89ce74.chunk.css"
   },
   {
-    "revision": "795aeeb1891d47c42771",
+    "revision": "b921b10fe829e1ed1efd",
     "url": "/Charitelly/static/css/main.8b026ef2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Charitelly/static/js/2.e2d3261e.chunk.js"
   },
   {
-    "revision": "795aeeb1891d47c42771",
-    "url": "/Charitelly/static/js/main.78ea41fe.chunk.js"
+    "revision": "b921b10fe829e1ed1efd",
+    "url": "/Charitelly/static/js/main.2173725f.chunk.js"
   },
   {
     "revision": "0ccf66226043285839f1",
