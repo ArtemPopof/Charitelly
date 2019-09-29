@@ -46,18 +46,22 @@ export class NavigationBar extends Component {
           ><Icon/></TabbarItem>
         </Tabbar>
       }>
-        <View id="home" activePanel="home">
+        <View header={false} id="home" activePanel="home">
           <Home id="home"/>
         </View>
-        <View id="prize" activePanel="prize">
+        <View  header={false} id="prize" activePanel="prize">
           <PrizePanel id="prize"/>
         </View>
-        <View id="profile" activePanel="profile">
+        <View  header={false} id="profile" activePanel="profile">
           <Profile id="profile"></Profile>
         </View>
       </Epic>
     )
   }
+}
+
+const style = {
+    backgroundColor: 'red'
 }
 
 export default NavigationBar

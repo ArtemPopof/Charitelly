@@ -9,6 +9,8 @@ export class PrizeScroll extends Component {
             <HorizontalScroll>
                 <div style={{display: 'flex'}}>
                     <PrizeScrollCard/>
+                    <PrizeScrollCard/>
+
                 </div>
             </HorizontalScroll>
         )
