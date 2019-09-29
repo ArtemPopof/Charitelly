@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Cell, Div, Button } from '@vkontakte/vkui'
 import Icon from './Icon'
+import PropType from 'prop-types'
 
 export default class PrizeCard extends Component {
     constructor(props) {
@@ -10,13 +11,18 @@ export default class PrizeCard extends Component {
     render() {
         return (
             <div style={card}>
-                <div style={leftPart}>1</div>
+                <img style={leftPart} src={this.props.imageUrl}></img>
                 <div style={rightPart}>
                     <Button style={btn}>Участвовать</Button>
                 </div>
             </div>
         )
     }
+}
+
+PrizeCard.propTypes = {
+    imageUrl: PropType.string.isRequired,
+
 }
 
 const card = {
@@ -50,3 +56,5 @@ const btn = {
     width: "100px",
     bottom: "6%"
 }
+
+

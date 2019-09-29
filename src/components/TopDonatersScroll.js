@@ -17,11 +17,7 @@ export class TopDonatersScroll extends Component {
               <TopDonatersCard imageUrl={Cat} donationCount='42k'/>
               <TopDonatersCard imageUrl={Man} donationCount='12.5k'/>
               <TopDonatersCard imageUrl={Persik} donationCount='10.5k'/>
-              <TopDonatersCard imageUrl={Cat} donationCount='10.5k'/>
-              <TopDonatersCard imageUrl={Man} donationCount='10.5k'/>
-              <TopDonatersCard imageUrl={Persik} donationCount='10.5k'/>
-              <TopDonatersCard imageUrl={Cat} donationCount='10.5k'/>
-              <TopDonatersCard imageUrl={Man} donationCount='10.5k'/>
+              <TopDonatersCard imageUrl={Cat} donationCount='42k'/>
             </div>
             </HorizontalScroll>
           </div>

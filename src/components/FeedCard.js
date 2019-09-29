@@ -18,20 +18,27 @@ export class FeedCard extends Component {
 
         const donationMask = this.getDonationMask()
 
+        const goal = getRandomInt(54444)
+        const donated = goal - getRandomInt(goal)
+
         return (
             <div style={container}>
                 <div>
-                <img style={image} src={Cat}></img>
+                <img style={image} src={this.props.projectImg}></img>
                 </div>
-                <div style={header}>Fight for tigres</div>
+                <div style={header}>{this.props.projectName}</div>
                 <div style={progress}>
-                <FundProgressbar></FundProgressbar>
+                <FundProgressbar fundedUsd={donated} goalUsd={goal}></FundProgressbar>
                 </div>
-                <div style={description}>Tigres are hungry and looking for a home, please don't be so rude, feed little tigre, he is so lonely</div>
+                <div style={description}>{this.props.projectDescription}</div>
             </div>
         )
     }
 }
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
 const image = {
     height: '158px',
@@ -69,7 +76,10 @@ const progress = {
 }
 
 FeedCard.propTypes = {
-	recentlyDonated: PropTypes.string
+    recentlyDonated: PropTypes.string,
+    projectImg: PropTypes.string.isRequired,
+    projectName: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string.isRequired
 };
 
 export default FeedCard

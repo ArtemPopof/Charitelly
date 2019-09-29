@@ -2,6 +2,7 @@ import React from "react"
 import { Panel, Cell, List, Header, PanelHeader } from "@vkontakte/vkui";
 import Menu from "../components/Menu";
 import PrizeCard from "../components/PrizeCard";
+import PrizeScroll from "../components/PrizesScroll";
 
 class PrizePanel extends React.Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class PrizePanel extends React.Component {
                 <Menu
                     menuItems={["Розыгрыши призов", "Подарки"]}
                     itemSelected={this.itemSelected} />
+                <PrizeScroll/>
                 {this.addCards()}
             </Panel>
         );

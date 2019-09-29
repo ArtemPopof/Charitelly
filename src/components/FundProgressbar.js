@@ -7,22 +7,21 @@ export class FundProgressbar extends Component {
         return (
             <div>
                 <div style={label}>
-                    <div style={funded}><span style={progressInfo}>{getPercent()}%</span> funded</div>
+                    <div style={funded}><span style={progressInfo}>{this.getPercent()}%</span> funded</div>
                     <div style={goal}><span style={progressInfo}>{this.props.goalUsd}$</span> goal</div>
                 </div>
                 <div style={progress}>
-                    <Progress value={40} />
+                    <Progress value={Math.round(this.getPercent())} />
                 </div>
             </div>
         )
     }
 
     getPercent() {
-        return this.props.fundedUsd / this.propTypes.goalUsd * 100
+        return ((this.props.fundedUsd / this.props.goalUsd) * 100).toFixed(2)
     }
 
 }
-
 
 const label = {
 }
