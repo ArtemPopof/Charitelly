@@ -1,44 +1,13 @@
+# Charitelly
+### Приложение VK Mini Apps для сбора пожертвований в игровой форме
+
 <div align="center">
-  <a href="https://github.com/VKCOM">
-    <img width="100" height="100" src="https://avatars3.githubusercontent.com/u/1478241?s=200&v=4">
-  </a>
-  <br>
-  <br>
-
-  [![npm][npm]][npm-url]
-  [![deps][deps]][deps-url]
-
+  <img height="600" src="https://sun9-43.userapi.com/c856028/v856028026/10c287/Y71CbyyWexk.jpg"></img>
+  <img height="600" src="https://sun9-17.userapi.com/c856028/v856028026/10c291/bcpzNazR_pk.jpg"></img>
+  <img height="600" src="https://sun9-31.userapi.com/c856028/v856028026/10c29b/gbQQH6Fq1_c.jpg"></img>
+  <img height="600" src="https://sun9-43.userapi.com/c856028/v856028026/10c2a5/Gcn7lZV25Fw.jpg"></img>
 </div>
 
-# VK Mini Apps: @vkontakte/create-vk-mini-app
+## Ссылка на текущую реализацию
 
-## How to install
-
-### Create VK Mini App with gh-pages deploy
-
-`npx @vkontakte/create-vk-mini-app <app-directory-name>`
-
-### Create VK Mini App with Zeit deploy
-
-Firstly, you have to create Zeit account and connect it with your GitHub profile — https://zeit.co/
-
-`npx @vkontakte/create-vk-mini-app <app-directory-name> --zeit`
-
-### Create VK Mini App with Surge deploy
-
-Firstly, you have to create Surge account and Surge-domain — https://surge.sh/
-
-`npx @vkontakte/create-vk-mini-app <app-directory-name> --surge <surge-domain>`
-
-## How to start work with app
-
-Go to created folder and run:
-`yarn start` || `npm start` — this will start dev server with hot reload on `localhost:10888`.
-
-`yarn run build` || `npm run build` — this will build production bundle, with tree-shaking, uglify and all this modern fancy stuff
-
-[npm]: https://img.shields.io/npm/v/@vkontakte/create-vk-mini-app.svg
-[npm-url]: https://npmjs.com/package/@vkontakte/create-vk-mini-app
-
-[deps]: https://img.shields.io/david/vkcom/create-vk-mini-app.svg
-[deps-url]: https://david-dm.org/vkcom/create-vk-mini-app
+<a href="https://ArtemPopof.github.io/Charitelly/">Попробовать прототип</a>
